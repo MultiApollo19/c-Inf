@@ -46,11 +46,20 @@ int main()
 	}
 	cout << "Przez tyle liczb mozna podzielic: " << liczbaEl << " tyle wynosi ich suma: " << sumaEl << endl;*/
 
-	string haslo;
+	/*string haslo;
 	while (haslo != "trzaslo") {
 		cout << "Podaj poprawne haslo!" << endl;
 		cin >> haslo;
 	}
-	cout << "NO BRAWO!" << endl;
+	cout << "NO BRAWO!" << endl;*/
+
+	string haslo;
+	int ile;
+	while (haslo != "trzaslo") {
+		ile++;
+		cout << "Podaj poprawne haslo!" << endl;
+		cin >> haslo;
+	}
+	cout << "NO BRAWO!" << " Zgadles za "<< ile << " razem!" << endl;
 }
 
