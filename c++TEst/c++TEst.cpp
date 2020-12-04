@@ -64,7 +64,7 @@ int main()
 
 
 	//CovID simulator 2k20
-	int liczbaZarazonych = 1;
+	/*int liczbaZarazonych = 1;
 	int liczbaDni = 0;
 	int liczbaMieszkancow = 94497;
 	int liczbaMartwych = 0;
@@ -83,6 +83,21 @@ int main()
 		cout << "Liczba martwych: " << liczbaMartwych << endl;
 	}
 	cout << "Liczba dni do momentu wyginiecia Grudziadzan: " << liczbaDni-1 << endl;
-	return 0;
+	return 0;*/
+
+
+	//Dzielniki właściwe
+	int liczba;
+	cout << "Podaj liczbe: " << endl;
+	cin >> liczba;
+	int POMOCY = liczba / 2;
+	cout << "Dzielniki wlasciwe: 1, ";
+
+	for (int i = 2; i < liczba; i++)
+	{
+		if (liczba%i == 0) {
+			cout << i << ", ";
+		}
+	}
 }
 
