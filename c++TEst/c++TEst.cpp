@@ -63,7 +63,7 @@ int main()
 	cout << "NO BRAWO!" << " Zgadles za "<< ile << " razem!" << endl;*/
 
 
-	//CovID simulator 2k20
+	//CovID simulator 2k20: Grudziądz edyszyn
 	/*int liczbaZarazonych = 1;
 	int liczbaDni = 0;
 	int liczbaMieszkancow = 94497;
