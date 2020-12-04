@@ -53,13 +53,30 @@ int main()
 	}
 	cout << "NO BRAWO!" << endl;*/
 
-	string haslo;
+	/*string haslo;
 	int ile;
 	while (haslo != "trzaslo") {
 		ile++;
 		cout << "Podaj poprawne haslo!" << endl;
 		cin >> haslo;
 	}
-	cout << "NO BRAWO!" << " Zgadles za "<< ile << " razem!" << endl;
+	cout << "NO BRAWO!" << " Zgadles za "<< ile << " razem!" << endl;*/
+
+
+	//CovID simulator 2k20
+	int liczbaZarazonych = 1;
+	int liczbaDni = 0;
+	while (liczbaZarazonych < 94497) {		
+		liczbaDni++;
+
+		if (liczbaDni % 7 != 3) {
+			liczbaZarazonych = liczbaZarazonych + 2 * liczbaZarazonych + liczbaZarazonych * 0, 2;
+		}
+		if (liczbaDni % 7 == 6) {
+			liczbaZarazonych -= liczbaZarazonych * 0, 3;
+		}
+	}
+	cout << "Liczba dni do momentu wyginiecia Grudziadzan: " << liczbaDni-1 << endl;
+	return 0;
 }
 
