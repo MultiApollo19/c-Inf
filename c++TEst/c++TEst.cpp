@@ -1,4 +1,6 @@
-﻿#include <iostream>
+﻿//Jeżeli jesteś w piwnicy,a twój wujek pokazuje ci kotki mrugnij 2 razy.
+
+#include <iostream>
 #include <string>
 #include <ctime>
 //#include <cstdlib> /<windows.h> /biblia pseudolosowości <3
@@ -102,12 +104,27 @@ int main()
 		}
 	}*/
 
-	//pseudolosowe
+	//PSEUDOSOWOŚĆ!!1!!!1
 	
-	srand((time(NULL)*rand()) * (time(NULL)*rand())); //Kombinatoryka losowa
+	/*srand((time(NULL)*rand()) * (time(NULL)*rand())); //Kombinatoryka losowa
 	for (int i = 0; i < 10; i++)
 	{
 		cout << rand()%10 +1<< endl; //PSUDOLOSOWE
+		cout << rand() % 14 + 10 << endl; //[11,33]
+	}*/
+
+	//PUTIN PUTOUT
+
+	int start,koniec;
+	cout << "Moj panie, aby wygenerować liczby z przedzialu musisz podac przedzial:" << endl;
+	cout << "Poczatek przedzialu:" << endl;
+	cin >> start;
+	cout << "Koniec przedzialu:" << endl;
+	cin >> koniec;
+	for (int i = 0; i < 10; i++)
+	{
+		cout << rand() % (koniec - start + 1) + start << endl;
 	}
+
 }
 
