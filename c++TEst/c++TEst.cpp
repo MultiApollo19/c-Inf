@@ -1,5 +1,7 @@
 ﻿#include <iostream>
 #include <string>
+#include <ctime>
+//#include <cstdlib> /<windows.h> /biblia pseudolosowości <3
 
 using namespace std;
 
@@ -87,17 +89,25 @@ int main()
 
 
 	//Dzielniki właściwe
-	int liczba;
+	/*int liczba;
 	cout << "Podaj liczbe: " << endl;
 	cin >> liczba;
 	int POMOCY = liczba / 2;
 	cout << "Dzielniki wlasciwe: 1, ";
 
-	for (int i = 2; i < liczba; i++)
+	for (int i = 2; i <= POMOCY* POMOCY; i++)
 	{
 		if (liczba%i == 0) {
 			cout << i << ", ";
 		}
+	}*/
+
+	//pseudolosowe
+	
+	srand((time(NULL)*rand()) * (time(NULL)*rand())); //Kombinatoryka losowa
+	for (int i = 0; i < 10; i++)
+	{
+		cout << rand()%10 +1<< endl; //PSUDOLOSOWE
 	}
 }
 
