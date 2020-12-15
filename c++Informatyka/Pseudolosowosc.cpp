@@ -30,20 +30,23 @@ for (int i = 0; i < 10; i++)
 
 //zapytaj uzytkownika o liczbe, wyosuj wartosc z [rzedzialu od 1 do tej iczby i sprawdz czy wylosowana wartosc jest liczba doskonala
 //doskonala-liiczba rowna sumie swoicy dzielnikow wlasciwych
-	int liczbaa;
+	int liczba;
 	cout << "EEEE, zapodaj liczbe:" << endl;
-	cin >> liczbaa;
-	int liczbaPom = liczbaa / 2;
+	cin >> liczba;
+	int liczbaPom = liczba / 2;
 	int dzielnikiSuma = 1;
-	for (int i = 2; i <= liczbaPom * liczbaPom; i++)
+	for (int i = 2; i* i <= liczba; i++)
 	{
-		if (liczbaa%i == 0) {
-			dzielnikiSuma = dzielnikiSuma + liczbaa;
+		if (liczba%i == 0) {
+			cout << i << ", ";
+			if (liczba / i != liczba) {
+				dzielnikiSuma = dzielnikiSuma + (liczba / i);
+			}
 		}
 	}
-	for (int i = 0; i < liczbaa; i++)
+	for (int i = 0; i < liczba; i++)
 	{
-		cout << rand() % liczbaa + 1 << endl;
+		cout << rand() % liczba + 1 << endl;
 		if (i == dzielnikiSuma) {
 			cout << "Jest doskona³a" << endl;
 		}
