@@ -30,7 +30,7 @@ for (int i = 0; i < 10; i++)
 
 //zapytaj uzytkownika o liczbe, wyosuj wartosc z [rzedzialu od 1 do tej iczby i sprawdz czy wylosowana wartosc jest liczba doskonala
 //doskonala-liiczba rowna sumie swoicy dzielnikow wlasciwych
-	int liczba;
+	/*int liczba;
 	cout << "EEEE, zapodaj liczbe:" << endl;
 	cin >> liczba;
 	int liczbaPom = liczba / 2;
@@ -50,5 +50,5 @@ for (int i = 0; i < 10; i++)
 		if (i == dzielnikiSuma) {
 			cout << "Jest doskona³a" << endl;
 		}
-    }
+    }*/
 }

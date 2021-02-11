@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	int liczba;
+	/*int liczba;
 	cout << "Podaj liczbe: " << endl;
 	cin >> liczba;
 	int liczbaPomocnicza = liczba / 2;
@@ -18,5 +18,5 @@ int main() {
 				cout << liczba / i << ", ";
 			}
 		}
-	}
+	}*/
 }
