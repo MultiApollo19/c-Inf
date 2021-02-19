@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "c++Informatyka", "c++Inform
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tablice", "tablice\tablice.vcxproj", "{72956435-A3DA-49F9-B00C-F7B75E693AE1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OperatorTrojargumentowy", "OperatorTrojargumentowy\OperatorTrojargumentowy.vcxproj", "{E1225D3D-77B1-406E-B70B-2966947CBCF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{72956435-A3DA-49F9-B00C-F7B75E693AE1}.Release|x64.Build.0 = Release|x64
 		{72956435-A3DA-49F9-B00C-F7B75E693AE1}.Release|x86.ActiveCfg = Release|Win32
 		{72956435-A3DA-49F9-B00C-F7B75E693AE1}.Release|x86.Build.0 = Release|Win32
+		{E1225D3D-77B1-406E-B70B-2966947CBCF2}.Debug|x64.ActiveCfg = Debug|x64
+		{E1225D3D-77B1-406E-B70B-2966947CBCF2}.Debug|x64.Build.0 = Debug|x64
+		{E1225D3D-77B1-406E-B70B-2966947CBCF2}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1225D3D-77B1-406E-B70B-2966947CBCF2}.Debug|x86.Build.0 = Debug|Win32
+		{E1225D3D-77B1-406E-B70B-2966947CBCF2}.Release|x64.ActiveCfg = Release|x64
+		{E1225D3D-77B1-406E-B70B-2966947CBCF2}.Release|x64.Build.0 = Release|x64
+		{E1225D3D-77B1-406E-B70B-2966947CBCF2}.Release|x86.ActiveCfg = Release|Win32
+		{E1225D3D-77B1-406E-B70B-2966947CBCF2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
