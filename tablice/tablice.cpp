@@ -90,7 +90,7 @@ int main() {
 		}
 	}
 	return 0;
-	/* //Werjsa Pana Pryka
+	/* //Wersja Pana Pryka
 	int t[10];
 	void wyswietl() { for (int i = 0; i < 10; i++) cout << t[i] << " "; cout << endl; }
 
