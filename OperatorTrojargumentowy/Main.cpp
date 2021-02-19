@@ -13,5 +13,5 @@ int main() {
 
 	int najwieksza = a > b ? a : b;
 	cout << "Najwieksza liczba jest: " << najwieksza <<endl;
-
+	return 0;
 }
