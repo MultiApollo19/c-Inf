@@ -5,7 +5,42 @@
 
 using namespace std;
 int main() {
+
+
+		srand(time(NULL));
+		int ughhh[10];
+		for (int i = 0; i < 10; i++) {
+			int random = rand();
+			cout << "Licza wylosowana: " << random << endl;
+			ughhh[i] = random;
+
+		}
+		int templicz = 0;
+		int tempindex = 0;
+		for (int x = 0; x < 10; x++) {
+			for (int i = 0; i < 10; i++) {
+				if (templicz < ughhh[i]) {
+					templicz = ughhh[i];
+					tempindex = i;
+				}
+			}
+		}
+
+		cout << "Najwieksza liczba: " << templicz << " jej index: " << tempindex << endl;
+
+	
+
+	/*int tablica[10] = {8,8, 8, 8, 8, 8, 8, 8, 8, 8};
 	srand(time(NULL));
+
+	int random = ((rand() % 10) + 1) -1;
+	tablica[random] = 0;
+	for (int i = 0; i < size(tablica); i++)
+	{
+		
+		cout << "Index: " << i << " liczba: " << tablica[i] << endl;
+	}
+	*/
 	/*int tablica[10];
 	for (int i = 0; i < size(tablica); i++)
 	{
@@ -73,7 +108,7 @@ int main() {
 		}
 	} */
 
-	int tablica[10];
+	/*int tablica[10];
 	
 
 	for (int i = 0; i < size(tablica); i++)
@@ -89,7 +124,7 @@ int main() {
 			cout << "Wartosc w tablicy: " << tablica[i] << endl;
 		}
 	}
-	return 0;
+	return 0;*/
 	/* //Wersja Pana Pryka
 	int t[10];
 	void wyswietl() { for (int i = 0; i < 10; i++) cout << t[i] << " "; cout << endl; }
