@@ -1,8 +1,64 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-using namespace std;
+#include <time.h>
+#include <thread>
 
+using namespace std;
+void chleb(int wybor) {
+	//
+	if (wybor == 1) {
+		fstream plig;
+		plig.open("ugibugi.txt", ios::in);
+		string linia;
+		int linie;
+		int suma;
+		while (!plig.eof())
+		{
+			getline(plig, linia);
+			if (linia != "") {
+				int liczba;
+				liczba = atoi(linia.c_str());
+				suma += liczba;
+				linie++;
+			}
+
+		}
+
+		plig.close();
+		//cout << "Suma: " << suma << endl;
+		//cout << "linie: " << linie << endl;
+	}
+	//
+	else if (wybor == 2) {
+		thread call_function(piekarnia);
+	}
+
+
+
+	
+}
+void piekarnia() {
+
+	int  poczatek, koniec, ILE;
+	cout << "Podaj poczatkowa liczbe: ";
+	cin >> poczatek;
+	cout << "Podaj koncowa liczbe: ";
+	cin >> koniec;
+
+	//ILE?!?!- SOCHA
+	srand(time(NULL));
+	ILE = rand() % 91 + 10;
+	fstream pliczek;
+	string linia;
+	pliczek.open("ugibugi.txt", ios::out);
+
+	for (int i = 0; i < 9999999999; i++)
+	{
+		pliczek << rand() % (koniec - poczatek + 1) + poczatek << endl;
+	}
+	pliczek.close();
+}
 int main()
 {
 	/*
@@ -61,7 +117,7 @@ int main()
 	}
 	}
 	*/
-	fstream pliczek;
+	//fstream pliczek;
 
 
 
@@ -117,7 +173,7 @@ int main()
 	}*/ // To habadzibad³o nie dzia³a :/
 
 	//TO JEST FILIPA
-		fstream pliczek;
+		/*fstream pliczek;
 
 		string linia;
 		pliczek.open("licznik.txt", ios::in);
@@ -133,9 +189,17 @@ int main()
 		pliczek.open("licznik.txt", ios::out);
 		pliczek << liczba;
 
-		pliczek.close();
+		pliczek.close();*/
 
 		// ale fajnie dziala
 
+		//09.04.2021
+		int wybor;
+		cout << "1 - zliczanie lini, 2 - zapis do pliku" << endl;
+		cin >> wybor;
+		chleb(wybor);
+	
+
+
 		return 0;
-	}
+}
