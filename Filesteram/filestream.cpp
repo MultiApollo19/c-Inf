@@ -8,32 +8,27 @@ using namespace std;
 int main()
 {
 	fstream plik;
-	string linia;
-	int liczby[950];
-	int linie=0;
-	int liczbaTMP;
+	string strumien;
+	string dzialanie;
+	int a, b;
 
 	plik.open("liczby.txt", ios::in);
 	while (!plik.eof())
 	{
-		getline(plik, linia);
-		if (linia != "") {			
-			liczbaTMP = atoi(linia.c_str());
-			liczby[linie] = liczbaTMP;
-			cout << "Linia: " << linie << " | wartosc: " << liczby[linie] << endl;
-			linie++;			
-		}		
-	}
-	plik.close();
-	fstream plig;
-	plig.open("liczbyRevers.txt", ios::out);
-	for (int i = linie-1; i >= 0; i--)
-	{
-		cout << "Linia Revers: " << i << " | wartosc: " << liczby[i] << endl;
-		plig << liczby[i] << endl;
-	}
-	plig.close();
+		plik >> a >> dzialanie >> b;
+		if (dzialanie == "dodaj") {
 
+		}
+		else if (dzialanie == "odejmij") {
+
+		}
+		else {
+			cout << "Error 404" << endl;
+		}
+		
+	}
+
+	plik.close();
 	return 0;
 }
 
@@ -308,3 +303,30 @@ else {
 		cout << "Najwieksza liczba: " << max << " najmniejsza: " << min<< endl;
 
 	}*/
+
+	/*fstream plik;
+	string linia;
+	int liczby[950];
+	int linie=0;
+	int liczbaTMP;
+
+	plik.open("liczby.txt", ios::in);
+	while (!plik.eof())
+	{
+		getline(plik, linia);
+		if (linia != "") {
+			liczbaTMP = atoi(linia.c_str());
+			liczby[linie] = liczbaTMP;
+			cout << "Linia: " << linie << " | wartosc: " << liczby[linie] << endl;
+			linie++;
+		}
+	}
+	plik.close();
+	fstream plig;
+	plig.open("liczbyRevers.txt", ios::out);
+	for (int i = linie-1; i >= 0; i--)
+	{
+		cout << "Linia Revers: " << i << " | wartosc: " << liczby[i] << endl;
+		plig << liczby[i] << endl;
+	}
+	plig.close();*/
