@@ -34,81 +34,6 @@ int main()
 	}
 	plig.close();
 
-	/*int wybor;
-
-	cout << "Wybierz opcje: 1-generuj; 2-analizuj:" << endl;
-	cin >> wybor;
-
-	if (wybor == 1) {
-
-		int poczatek;
-		int koniec;
-		int ile;
-
-		cout << "Podaj liczbe pocztakowa: " << endl;
-		cin >> poczatek;
-
-		cout << "Podaj liczbe koncowa: " << endl;
-		cin >> koniec;
-
-		srand(time(NULL));
-
-		ile = rand() % 91 + 10;
-
-		fstream plik;
-
-		plik.open("plik.txt", ios::out);
-
-		for (int i = 0; i < ile; i++) {
-
-			plik << rand() % (koniec - poczatek + 1) + poczatek << endl;
-
-		}
-
-		plik.close();
-	}
-	else {
-
-		fstream plik;
-
-		plik.open("plik.txt", ios::in);
-
-		string linia;
-
-		int liczba;
-		int suma = 0;
-		int wartosc = 0;
-		int min=0;
-		int max=0;
-
-		while (!plik.eof()) {
-
-			getline(plik, linia);
-
-			if (linia != "") {
-
-				liczba = atoi(linia.c_str());
-				suma += liczba;
-				if(liczba <min){
-					min = liczba;
-				}
-				else{
-					if(liczba > max){
-					max=liczba;
-					}
-				
-				}
-				wartosc++;
-
-			}
-		}
-
-		cout << "Wyst¹pi³o liczb: " << wartosc << endl;
-		cout << "Ich suma: " << suma << endl;
-		cout << "Najwieksza liczba: " << max << " najmniejsza: " << min<< endl;
-
-	}*/
-
 	return 0;
 }
 
@@ -308,3 +233,78 @@ else {
 
 	*/
 	//£O PANIE, A KTO TO PANU TO TAK SKOMPLIKOWA£
+
+	/*int wybor;
+
+	cout << "Wybierz opcje: 1-generuj; 2-analizuj:" << endl;
+	cin >> wybor;
+
+	if (wybor == 1) {
+
+		int poczatek;
+		int koniec;
+		int ile;
+
+		cout << "Podaj liczbe pocztakowa: " << endl;
+		cin >> poczatek;
+
+		cout << "Podaj liczbe koncowa: " << endl;
+		cin >> koniec;
+
+		srand(time(NULL));
+
+		ile = rand() % 91 + 10;
+
+		fstream plik;
+
+		plik.open("plik.txt", ios::out);
+
+		for (int i = 0; i < ile; i++) {
+
+			plik << rand() % (koniec - poczatek + 1) + poczatek << endl;
+
+		}
+
+		plik.close();
+	}
+	else {
+
+		fstream plik;
+
+		plik.open("plik.txt", ios::in);
+
+		string linia;
+
+		int liczba;
+		int suma = 0;
+		int wartosc = 0;
+		int min=0;
+		int max=0;
+
+		while (!plik.eof()) {
+
+			getline(plik, linia);
+
+			if (linia != "") {
+
+				liczba = atoi(linia.c_str());
+				suma += liczba;
+				if(liczba <min){
+					min = liczba;
+				}
+				else{
+					if(liczba > max){
+					max=liczba;
+					}
+
+				}
+				wartosc++;
+
+			}
+		}
+
+		cout << "Wyst¹pi³o liczb: " << wartosc << endl;
+		cout << "Ich suma: " << suma << endl;
+		cout << "Najwieksza liczba: " << max << " najmniejsza: " << min<< endl;
+
+	}*/
