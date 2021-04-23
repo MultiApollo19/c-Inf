@@ -8,28 +8,29 @@ using namespace std;
 int main()
 {
 	fstream plik;
-	string strumien;
-	string dzialanie;
+	plik.open("zadanie2.txt", ios::out);
+
+	srand(time(NULL));
+	string dzialania[3] = { "dodaj","usun","cos" };
+	int tmpZnaczDzial = 0;
+
+	int ileDzialan;
 	int a, b;
+	ileDzialan = rand();
 
-	plik.open("liczby.txt", ios::in);
-	while (!plik.eof())
+
+	for (int i = 0; i <= ileDzialan; i++)
 	{
-		plik >> a >> dzialanie >> b;
-		if (dzialanie == "dodaj") {
+		a = rand();
+		b = rand();
+		tmpZnaczDzial = rand() % 3;
+		cout << "Debug: " << a << " " << dzialania[tmpZnaczDzial] << " " << b << endl;
 
-		}
-		else if (dzialanie == "odejmij") {
-
-		}
-		else {
-			cout << "Error 404" << endl;
-		}
-		
+		plik << a<<" " << dzialania[tmpZnaczDzial] << " " << b << endl;
+		cout << "Debug: " << i << endl;
 	}
-
 	plik.close();
-	return 0;
+	return 0;	
 }
 
 /*void chleb(int wybor) {
@@ -330,3 +331,28 @@ else {
 		plig << liczby[i] << endl;
 	}
 	plig.close();*/
+
+//Zadanie ze strumieniami to 1
+	/*fstream plik;
+	string strumien;
+	string dzialanie;
+	int a, b;
+
+	plik.open("zadanie2.txt", ios::in);
+	while (!plik.eof())
+	{
+		plik >> a >> dzialanie >> b;
+		cout << "Debug: " << a << " "<< dzialanie << " " << b<<endl;
+		if (dzialanie == "dodaj") {
+			cout << a + b << endl;
+		}
+		else if (dzialanie == "odejmij") {
+			cout << a - b << endl;
+		}
+		else {
+			cout << "Error 404" << endl;
+		}
+
+	}
+
+	plik.close();*/
