@@ -1,36 +1,49 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <random>
 #include <time.h>
 #include <thread>
 
 using namespace std;
 int main()
 {
+	int suma = 0;
+
 	fstream plik;
-	plik.open("zadanie2.txt", ios::out);
-
-	srand(time(NULL));
-	string dzialania[3] = { "dodaj","usun","cos" };
-	int tmpZnaczDzial = 0;
-
-	int ileDzialan;
-	int a, b;
-	ileDzialan = rand();
-
-
-	for (int i = 0; i <= ileDzialan; i++)
-	{
-		a = rand();
-		b = rand();
-		tmpZnaczDzial = rand() % 3;
-		cout << "Debug: " << a << " " << dzialania[tmpZnaczDzial] << " " << b << endl;
-
-		plik << a<<" " << dzialania[tmpZnaczDzial] << " " << b << endl;
-		cout << "Debug: " << i << endl;
+	plik.open("zadanie3.txt", ios::in);
+	int linia[6];
+	while (!plik.eof()) {
+		plik >> linia[0] >> linia[1] >> linia[2] >> linia[3] >> linia[4] >> linia[5];
+		//cout << "Debug: " << "ID: " << linia[0] <<endl;
+		switch (linia[0]) {
+		case 1:
+			suma = suma + linia[1];
+			cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[1] << " | aktualna suma: " << suma << endl;
+			break;
+		
+		case 2:
+			suma = suma + linia[2];
+			cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[2] << " | aktualna suma: " << suma << endl;
+			break;
+		case 3:
+			suma = suma + linia[3];
+			cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[3] << " | aktualna suma: " << suma << endl;
+			break;
+		case 4:
+			suma = suma + linia[4];
+			cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[4] << " | aktualna suma: " << suma << endl;
+			break;
+		case 5:
+			suma = suma + linia[5];
+			cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[5] << " | aktualna suma: " << suma << endl;
+			break;
+		}
 	}
+
+	cout << "Koncowa suma programu: " << suma << endl;
 	plik.close();
-	return 0;	
+	return 0;
 }
 
 /*void chleb(int wybor) {
@@ -356,3 +369,75 @@ else {
 	}
 
 	plik.close();*/
+
+
+//HEHE
+	/*fstream plik;
+	plik.open("zadanie2.txt", ios::out);
+
+	srand(time(NULL));
+	string dzialania[3] = { "dodaj","odejmij","cos" };
+	int ZnacznikDzialania=0;
+
+	int ileDzialan;
+	int a, b;
+	ileDzialan = rand();
+
+
+	for (int i = 0; i <= ileDzialan; i++)
+	{
+		a = rand();
+		b = rand();
+
+		bool prawdopodobienstwo = (rand() % 100) < 75;
+		if (!prawdopodobienstwo) {
+			ZnacznikDzialania = 2;
+		}
+		else {
+			ZnacznikDzialania = rand() % 2;
+		}
+
+
+
+		cout << "Debug: " << a << " " << dzialania[ZnacznikDzialania] << " " << b << endl;
+
+		plik << a<<" " << dzialania[ZnacznikDzialania] << " " << b << endl;
+		cout << "Debug: " << i << endl;
+	}
+	plik.close();*/
+
+/* //Zadanko to z dodawaniem,odejmowaniem i cosiowaniem z prawdopodobieñstwem
+fstream plik;
+plik.open("zadanie2.txt", ios::out);
+
+srand(time(NULL));
+string dzialania[3] = { "dodaj","odejmij","cos" };
+int ZnacznikDzialania = 0;
+
+int ileDzialan;
+int a, b;
+ileDzialan = rand();
+
+
+for (int i = 0; i <= ileDzialan; i++)
+{
+	a = rand();
+	b = rand();
+
+	bool prawdopodobienstwo = (rand() % 100) < 75;
+	if (!prawdopodobienstwo) {
+		ZnacznikDzialania = 2;
+	}
+	else {
+		ZnacznikDzialania = rand() % 2;
+	}
+
+
+
+	cout << "Debug: " << a << " " << dzialania[ZnacznikDzialania] << " " << b << endl;
+
+	plik << a << " " << dzialania[ZnacznikDzialania] << " " << b << endl;
+	cout << "Debug: " << i << endl;
+}
+plik.close();
+return 0;*/
