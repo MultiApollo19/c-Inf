@@ -6,43 +6,63 @@
 #include <thread>
 
 using namespace std;
+/*string dzialanie() {
+	string dzialanko;
+	int a = rand();
+	int b = rand();
+
+	switch (rand() % 3)
+	{
+	case 0:
+		return dzialanko = "dodaj";
+		break;
+
+	case 1:
+		return dzialanko = "odejmij";
+		break;
+
+	case 2:
+		return dzialanko = "cos";
+		break;
+
+	}
+	return 0;
+}*/
 int main()
 {
-	int suma = 0;
+	int liczba;
+	cout << "Podaj liczbe: " << endl;
+	cin >> liczba;
+	if (liczba % 2 & liczba % 3 & liczba % 5 & liczba % 7) {
+		cout << "Podzielna przez 2,3,5,7!";
+	}
+	else {
+		cout << "Zapomnij, niepodzielna przez 2,3,5,7!";
 
-	fstream plik;
-	plik.open("zadanie3.txt", ios::in);
-	int linia[6];
-	while (!plik.eof()) {
-		plik >> linia[0] >> linia[1] >> linia[2] >> linia[3] >> linia[4] >> linia[5];
-		//cout << "Debug: " << "ID: " << linia[0] <<endl;
-		switch (linia[0]) {
-		case 1:
-			suma = suma + linia[1];
-			cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[1] << " | aktualna suma: " << suma << endl;
-			break;
-		
-		case 2:
-			suma = suma + linia[2];
-			cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[2] << " | aktualna suma: " << suma << endl;
-			break;
-		case 3:
-			suma = suma + linia[3];
-			cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[3] << " | aktualna suma: " << suma << endl;
-			break;
-		case 4:
-			suma = suma + linia[4];
-			cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[4] << " | aktualna suma: " << suma << endl;
-			break;
-		case 5:
-			suma = suma + linia[5];
-			cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[5] << " | aktualna suma: " << suma << endl;
-			break;
-		}
 	}
 
-	cout << "Koncowa suma programu: " << suma << endl;
-	plik.close();
+	/*
+	fstream plik;
+	plik.open("zadanie2.txt", ios::out);
+	srand(time(NULL));
+	//string dzialania[3] = { "dodaj","odejmij","cos" };
+	int tmpZnaczDzial = 0;
+	string dzialanie;
+
+	int ileDzialan;
+	int a, b;
+	ileDzialan = rand();
+
+	for (int i = 0; i <= ileDzialan; i++)
+	{
+		string dzialaniee = dzialanie();
+		cout << "Debug: " << a << " " << dzialaniee << " " << b << endl;
+
+		plik << a << " " << dzialanie << " " << b << endl;
+		cout << "Debug: " << i << endl;
+		plik.close();
+	}*/
+	
 	return 0;
 }
 
@@ -441,3 +461,57 @@ for (int i = 0; i <= ileDzialan; i++)
 }
 plik.close();
 return 0;*/
+
+//Tasiemiec nieuzbrojony 
+/*int suma = 0;
+
+fstream plik;
+plik.open("zadanie3.txt", ios::in);
+int linia[6];
+while (!plik.eof()) {
+	plik >> linia[0] >> linia[1] >> linia[2] >> linia[3] >> linia[4] >> linia[5];
+	//cout << "Debug: " << "ID: " << linia[0] <<endl;
+	switch (linia[0]) {
+	case 1:
+		suma = suma + linia[1];
+		cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[1] << " | aktualna suma: " << suma << endl;
+		break;
+
+	case 2:
+		suma = suma + linia[2];
+		cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[2] << " | aktualna suma: " << suma << endl;
+		break;
+	case 3:
+		suma = suma + linia[3];
+		cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[3] << " | aktualna suma: " << suma << endl;
+		break;
+	case 4:
+		suma = suma + linia[4];
+		cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[4] << " | aktualna suma: " << suma << endl;
+		break;
+	case 5:
+		suma = suma + linia[5];
+		cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[5] << " | aktualna suma: " << suma << endl;
+		break;
+	}
+
+}
+
+cout << "Koncowa suma programu: " << suma << endl;
+plik.close();*/
+
+//tasiemiec uproszczony
+/*
+fstream plik;
+plik.open("zadanie3.txt", ios::in);
+int linia[6];
+while (!plik.eof()) {
+	plik >> linia[0] >> linia[1] >> linia[2] >> linia[3] >> linia[4] >> linia[5];
+	//cout << "Debug: " << "ID: " << linia[0] <<endl;
+		suma = suma + linia[linia[0]];
+		cout << "Debug: " << "ID: " << linia[0] << " | liczba: " << linia[linia[0]] << " | aktualna suma: " << suma << endl;
+
+}
+
+cout << "Koncowa suma programu: " << suma << endl;
+plik.close();*/
