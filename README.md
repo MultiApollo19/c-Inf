@@ -20,3 +20,12 @@ Większą z wartości pomniejszamy o wartość mniejszej do momentu zrównania w
 #### Wyznaczanie liczb pierwszych na przedziale <2,n>:
   
 Oznaczamy wszystkie liczby w tablicy jako pierwsze, po czym pętla iterująca się od 2 do sqrt(n) po napotkaniu liczby pierwszej oznacza jako liczbę złozoną wszystkie jej wielokrotności.
+
+
+## *Sortowania*
+
+### *Bombelkowe*
+
+Porównujemy liczbę i jej następnik i zamieniamy jeśli są w niewłaściwej kolejności. Po czym porownujemy owy następnik z jego następnikiem itd. Istnieje wiele wariantów tego sortowania np: 
+
+- Podstawowe ~ Skoro w jednym cyklu minimum jedna lcizba będzie posortowana to powtażamy ten cykl (n-1) raza. W całym sortowaniu (n-1)^2 porównań
