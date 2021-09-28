@@ -29,3 +29,4 @@ Oznaczamy wszystkie liczby w tablicy jako pierwsze, po czym pętla iterująca si
 Porównujemy liczbę i jej następnik i zamieniamy jeśli są w niewłaściwej kolejności. Po czym porownujemy owy następnik z jego następnikiem itd. Istnieje wiele wariantów tego sortowania np: 
 
 - Podstawowe ~ Skoro w jednym cyklu minimum jedna lcizba będzie posortowana to powtażamy ten cykl (n-1) raza. W całym sortowaniu (n-1)^2 porównań
+- Upgrade stage 1 ~ Po jednym cyklu mamy posortowaną 1 wartość tak więc w kolejnym cyklu możemy zmiejszyć liczbę porównan o 1.
