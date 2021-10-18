@@ -30,3 +30,12 @@ Porównujemy liczbę i jej następnik i zamieniamy jeśli są w niewłaściwej k
 
 - Podstawowe ~ Skoro w jednym cyklu minimum jedna lcizba będzie posortowana to powtażamy ten cykl (n-1) raza. W całym sortowaniu (n-1)^2 porównań
 - Upgrade stage 1 ~ Po jednym cyklu mamy posortowaną 1 wartość tak więc w kolejnym cyklu możemy zmiejszyć liczbę porównan o 1.
+
+### *Kubełkowe*
+
+Jest to najbardziej wydajne obliczeniowo sortowanie jednak jedno z najmniej wydajnych jeśli chodzi o wykorzystaną pamięc. Wykorzystuje ono tablice pomocnicza,w której odnotuwujemy czestotliwosc wystepowania poszczegolnych wartosci,a nastepnie wypelniamy badana tablice wartosciami zgodnie z danymi tablicy pomocniczej.
+Wystapienie poszczególnych wartosci wykorzystujać wartośc z tablicy badanej jako indeks tablicy pomocniczej => for(int i=0;i<n;i++)tmp[t[i]]=1;
+
+### *Zwariowane*
+
+Polega ono na losowej zamianie elementow zbioru, do momentu przypadkowego uporzadkowania calosci. Z tego względu iz algorytm ten może wykonywać sie w nieskonczonym czasie nie zawsze jest klasyfikowany jako algorytm.
