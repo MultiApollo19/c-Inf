@@ -59,7 +59,31 @@ void kubelkowe(){
     for(int i=0;i<ile_liczb;i++)
         while(tmp[i]--)t[gdzie++]=i;
 }
+void max_min(){ //Bez sortowań, panie MAGIA. BARRRDZO DOBRRA ROBOTA
+    int minn = t[0];
+    int maxx = t[0];
+    for(int i=0;i<n;i+=2){
+        if(t[i] > t[i+1]){
+            if(t[i] > maxx){
+            maxx = t[i];
+            }
+            if(t[i+1] < minn){
+            minn = t[i+1];
+            }
+        }
+        else{
+            if(t[i+1] > maxx){
+            maxx = t[i+1];
+            }
+            if(t[i] < minn){
+            minn = t[i];
+            }
+        }
 
+    }
+    cout << minn << endl;
+    cout << maxx << endl;
+}
 int main(){
      generuj(ile_liczb);  wyswietl();
      kubelkowe();         wyswietl();
