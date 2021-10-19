@@ -20,7 +20,9 @@ Większą z wartości pomniejszamy o wartość mniejszej do momentu zrównania w
 #### Wyznaczanie liczb pierwszych na przedziale <2,n>:
   
 Oznaczamy wszystkie liczby w tablicy jako pierwsze, po czym pętla iterująca się od 2 do sqrt(n) po napotkaniu liczby pierwszej oznacza jako liczbę złozoną wszystkie jej wielokrotności.
+## *Dziel i rzqdź (Polish Edition)*
 
+Cennym pojedściem przy algorytmizacji procesów jest metoda dziel i rządź tj. podział badanego zbioru na mniejsze podzbiory i analizowaniu ich niezależnie np. w wypadku wyszukiwania ekstremów w zbiorze. Możemy podzielić go na zbiór liczb większych i mniejszych w pierwszym wyszukując tylko minimum, a w drugim tylko maksimum. 
 
 ## *Sortowania*
 
