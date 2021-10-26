@@ -51,3 +51,10 @@ Wystapienie poszczególnych wartości wykorzystujac wartość z tablicy badanej 
 ### *Zwariowane*
 
 Polega ono na losowej zamianie elementów zbioru, do momentu przypadkowego uporządkowania całosci. Z tego względu iż algorytm ten może wykonywać sie w nieskończonym czasie nie zawsze jest klasyfikowany jako algorytm.
+
+### *Sortowanie przez selekcję (wybór)*
+
+Znajdujemy najmniejszy element w zbiorze i wstawiamy je na właściwe miejsce. Czynność powtarzamy wyszukując minimum na coraz mniejszym ziorze wartości.
+*Apropo defaqto*
+W pierwszym wyszukiwaniu będzie n-1, nastepnym n-2,... itd. porównań.
+W sumie dokonamy n-1 zamian i n*(n-1)/2 porównań.
