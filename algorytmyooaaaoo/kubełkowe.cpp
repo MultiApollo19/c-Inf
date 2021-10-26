@@ -84,6 +84,25 @@ void max_min(){ //Bez sortowań, panie MAGIA. BARRRDZO DOBRRA ROBOTA
     cout << minn << endl;
     cout << maxx << endl;
 }
+//NU DUBRA TUTAJ KAJ GDZIES BEDZIE TO SORTOWANIE SELEKCYJNE
+
+int index_min(int poczatek){
+    for(int i=poczatek+1;i<n;i++){
+        if(t[poczatek] > t[i]){
+            poczatek = i;
+        }
+
+    }
+    return poczatek;
+}
+void wybor(){
+    for(int i=0;i<n-1;i++){
+        swap(t[i],t[index_min(i)]);
+    }
+}
+//A JE TO
+
+
 int main(){
      generuj(ile_liczb);  wyswietl();
      kubelkowe();         wyswietl();
