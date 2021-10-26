@@ -30,7 +30,7 @@ Cennym pojedściem przy algorytmizacji procesów jest metoda dziel i rządź tj.
  1. int a,b,tmp tmp=a;a=b;b=tmp; <- "Staszek jest najlepsze"
  2. a=a+b;b=a-b;a=a-b; / a=a-b;b=a+b;a=b-a; <- TO TAKIE SEEE, ale ujdzie
  3. a=a*b;b=b/a;a=a/b; <- UNIKAĆ JAK ŁOGNIA!
- 4. Coś tam z xorem coś jak: a=a xor b; b= a xor b ; a= a xor b; takie... niepowtarzalne <- Niby tak, ale nie do końca. Zdobyło Laur konsumenta 2021!.
+ 4. Coś tam z xorem coś jak: a=a xor b; b= a xor b ; a= a xor b; (Alternatywa wykluczająca/rozłączna/róznica symetryczna/Suma poprzeczna/Kontrawalnecja/ekskluzja/suma modulo 2) takie... niepowtarzalne <- Niby tak, ale nie do końca. Zdobyło Laur konsumenta 2021!.
  5. Triki programistyczne HEHEUHE (pewno Stackoverflow, tam są sami "programiści"....chociaż oni dają jakieś porady, a nie jak na Elektrodzie)
 
 ## *Sortowania*
