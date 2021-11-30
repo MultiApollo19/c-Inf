@@ -58,3 +58,12 @@ Znajdujemy najmniejszy element w zbiorze i wstawiamy je na właściwe miejsce. C
 *Apropo defaqto*
 W pierwszym wyszukiwaniu będzie n-1, nastepnym n-2,... itd. porównań.
 W sumie dokonamy n-1 zamian i n*(n-1)/2 porównań.
+
+
+## *Exel*
+
+### *Funkcje*
+
+- Fragment tekstu
+- Lewy / Prawy
+
