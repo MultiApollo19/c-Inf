@@ -66,4 +66,14 @@ W sumie dokonamy n-1 zamian i n*(n-1)/2 porównań.
 
 - Fragment tekstu
 - Lewy / Prawy
+- Wartość
+- NR_kolumny
+- Wiersz
+- Tekst
+- MOD
+- ISodd
+- ISeven 
 
+### *Skróty*
+
+- CTRL + ; -> Wstawianie aktualnej daty
