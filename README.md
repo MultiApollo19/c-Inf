@@ -73,7 +73,13 @@ W sumie dokonamy n-1 zamian i n*(n-1)/2 porównań.
 - MOD
 - ISodd
 - ISeven 
+- KOD
+- Znak
 
 ### *Skróty*
 
 - CTRL + ; -> Wstawianie aktualnej daty
+
+### *Szyfry podstawieniowe, przesuwne - kod Cezara*
+
+Szyfry podstawieniowie to najstarsze i najprostrze z metod kryptgraficznych, które ze względu na statystyczną analizę częstotliwości występowania znaków nie sa już użytkowane. Pierwszym opisanym historycznie szyfrem z tej grupy był szyfr przesuwny Cezara, przypisujący każdej literze alfabetu oddalony od 3 miejsca. Współcześnie szyfrem Cezara określamy wszystkie szyfry przesuwne. Szyfry przesuwne poza celami edukacyjnymi używamy jako elementy innych metod kryptograficznych, bądź jako funckję "spoiler" w wypadku rot-13 rot-13(rot-13(txt))=txt .
