@@ -101,6 +101,64 @@ void wybor(){
     }
 }
 //A JE TO
+//NOWE TETATE
+
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+
+using namespace std;
+
+const int n =10;
+
+
+int t[n];
+
+void liczby(int zakres){
+    srand(time(NULL));
+    for(int i =0;i<n;i++){
+        t[i] = rand()%zakres;
+    }
+}
+void wyswietlanko(){
+    for(int i =0;i<n;i++){
+        cout << t[i]<<endl;
+    }
+}
+
+void bombelek_bieda(){
+    for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++){
+            if(t[i-1]>t[i]){
+                swap(t[i-1],t[i]);
+            }
+        }
+    }
+}
+void bombelek_lepszy(){
+    int hehe=n;
+    for(int i=0;i<n;i++){
+        for(int i=0;i<hehe;i++){
+            if(t[i-1]>t[i]){
+                swap(t[i-1],t[i]);
+            }
+
+        }
+        hehe--;
+    }
+}
+int main()
+{
+    liczby(100);
+    wyswietlanko();
+    cout << "Dobry bombel"<<endl;
+    bombelek_lepszy();
+    wyswietlanko();
+    return 0;
+}
+
+
 
 
 int main(){
